@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+	margin:0 ;padding: 0;box-sizing: border-box;
+}
+
+body{
+	background-color: #fffde5;
+}
+
+#nav-language{
+	font-size: 22px;
+	color: #ff90a8;
+	
+	
+	
+}
+#pre-matri{
+	font-family: "Fredoka", sans-serif;
+	font-size: 35px;
+	color: #FF90A8;
+	text-align:left;
+	font-weight: bold;
+	margin-bottom:10px ;
+	margin-left: 130px;
+	padding: 30px;/*afasta os textos das bordas do fundo*/
+	
+	border-radius: 8px;
+	width: fit-content;
+}
+
+
+
+.diagnostico-pergunta{
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	display: block;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-left: 170px;
+	
+}
+.espaco{
+	margin-top: 35px;
+	width: 30%;
+	height: 460px;
+	max-width: auto;
+	float: right;
+	margin-right: 100px;
+	border: 20%;
+	border-radius: 15px;
+	box-shadow: 3px 4px 8px 0px #FF90A8;
+}
+.radio-container{/*caixa onde ficam os botões*/
+	display: flex;/*alinha o circulo e o texto lado a lado */
+	flex-direction: row;
+	width: 500px;
+	padding: 15px;/*espaçamento interno da caixa*/
+	margin-bottom: 10px;/*espaçamento entre as caixas*/
+	margin-left: 130px;
+	background-color: #DAF3F3;
+	border-radius: 10px;
+	cursor:pointer;
+	transition: background-color 0.2s ease;
+	font-family: "Inter",sans-serif;/*vai mudar o estilo da fonte dos textos que estão dentro da caixa*/
+}
+.form-matricula{
+	padding:30px;
+	
+}
+
+.radio-container input{
+	position: absolute;/*permite posicionar o círculo em relação ao container*/
+	opacity: 0;/*torna o botão de "radio" padrão invisível*/
+	pointer-events: none;
+	
+}
+
+.radio-container .checkmark {/*ESTILO DO CIRCULO=CHECKMARK*/
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #4a77a5;
+	background-color: #DAF3F3;
+	transition: background-color 0.1s ease, border-color 0.1s ease;
+	margin-right: 15px;
+	clear: both;
+}
+.radio-container input:checked + .checkmark {/*aplicar estilo ao checkmark quando o input estiver selecionado/ELE DIZ MAIS OU MENOS ASSIM:aplique o estilo ao elemento checkmark que vem logo após uminput marcado(checked)*/
+	background-color: #ff90a8; /* Cor do fundo quando selecionado */
+	border-color: #4a77a5; /* Cor da borda quando selecionado */
+}
+
+
+.radio-container:hover{
+	background-color: #f5acbc;
+}
+
+.button-container{
+	display: flex;/*torna os botões flexíveis*/
+	justify-content:center;/*centraliza os botões horizontalmente*/
+	gap:20px;/*espaçamento entre os botões*/
+	margin-top: 20px;/*espaçamento do container*/
+    margin-left: 300px;
+    gap: 20px;
+    width: fit-content;
+    
+
+}
+.btn-default {
+	padding: 10px 20px;
+    background-color: #fff9a7;
+    color: rgb(63, 57, 57);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+	
+}
+
+.btn-default-2{
+	
+		padding: 10px 20px;
+		background-color: #ffa7ba;
+		color: rgb(63, 57, 57);
+		font-family: "Inter", sans-serif;
+		font-size: 15px;
+		border: none;
+		border-radius: 15px;
+		cursor: pointer;
+}
+
+strong{
+	color: #EF6383;
+}
+
+
+.comecoImp{
+    font-family: "Inter",sans-serif;
+    color: #fc849e;
+}
+.restoImp{
+    font-family: "Inter",sans-serif;
+    color: #555152;
+}
+.importante {
+    display: flex; /* Garante que os textos fiquem lado a lado */
+    flex-direction: column; /* Organiza os itens em coluna */
+    margin-left: 165px; /* Alinha horizontalmente com os formulários */
+    margin-top: 15px; /* Espaçamento acima */
+    width: 500px; /* Igual ao tamanho do formulário */
+	padding: 20px;
+}
+
+.comecoImp {
+    font-family: "Inter", sans-serif;
+    color: #fc849e;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.restoImp {
+    font-family: "Inter", sans-serif;
+    color: #555152;
+    line-height: 1.5; /* Melhora o espaçamento entre linhas */
+}
+footer{
+	clear: both;
+	width: 100%;
+	height: 40px;
+	background-color: #212121;
+}

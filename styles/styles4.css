@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+	margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background-color: #fffde5;
+}
+.espaco{
+    margin-top: 35px;
+	width: 30%;
+	height: 460px;
+	max-width: auto;
+	float: right;
+	margin-right: 100px;
+	border: 20%;
+	border-radius: 15px;
+	box-shadow: 3px 4px 8px 0px #FF90A8;
+}
+
+#pre-matri{
+	font-family: "Fredoka", sans-serif;
+	font-size: 35px;
+	color: #FF90A8;
+	text-align:left;
+	font-weight: bold;
+	margin-bottom:10px ;
+	margin-left: 140px;
+	padding: 30px;/*afasta os textos das bordas do fundo*/
+	
+	border-radius: 8px;
+	width: fit-content;
+	
+	
+	
+}
+
+
+form-dados p {
+	padding: 0px;
+    background-color: #383838;
+   
+
+}
+
+.paragrafo{
+    margin-left: 169px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    font-family: "inter", sans-serif;
+    color: #383838;
+    font-size: 18px;
+}
+
+
+
+.dados{
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+	padding: 0px;
+	margin-bottom: 14px;
+	margin-top: 15px;
+    margin-left: 169px;
+	color: #383838;
+	
+}
+
+#digite-aqui{
+	width: 500px;/*se ajustou ao form-digite*/
+	height: 40px;
+	background-color: #DAF3F3;
+	padding: 0 20px;
+	
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	color: #554e51;
+	border: 1px solid#DAF3F3;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-left: 165px;
+    align-items: column;
+	
+	
+}
+#digite-aqui:focus {
+	outline: none; /* Remove a borda padrão do navegador */
+	border-color: #ff90a8; /* Altera a cor da borda ao focar */
+	background-color: #DAF3F3; /* Suaviza o fundo */
+}
+.idioma-pre{
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	display: block;
+	margin-top: 20px;
+	margin-left: 170px;
+	color: #383838;
+}
+.idioma-pre-2{
+    color: #fc849e;
+    font-family: "Inter", sans-serif;
+    margin-left: 165px;
+}
+.form-matricula{
+	padding:18px;
+    color: #383838;
+	
+}
+.radio-container{/*caixa onde ficam os botões*/
+	display: flex;/*alinha o circulo e o texto lado a lado */
+	align-items: center;
+	width: 500px;
+	padding: 15px;/*espaçamento interno da caixa*/
+	margin-bottom: 10px;/*espaçamento entre as caixas*/
+	margin-left: 148px;
+	background-color: #DAF3F3;
+	border-radius: 10px;
+	cursor:pointer;
+	transition: background-color 0.2s ease;
+	font-family: "Inter",sans-serif;/*vai mudar o estilo da fonte dos textos que estão dentro da caixa*/
+	
+}
+.radio-container input{
+	position: absolute;/*permite posicionar o círculo em relação ao container*/
+	opacity: 0;/*torna o botão de "radio" padrão invisível*/
+	pointer-events: none;
+	
+}
+
+.radio-container .checkmark {/*ESTILO DO CIRCULO=CHECKMARK*/
+	width: 20px;
+	height: 18px;
+	border-radius: 50%;
+	border: 2px solid #4a77a5;
+	background-color: #DAF3F3;
+	transition: background-color 0.1s ease, border-color 0.1s ease;
+	margin-right: 15px;
+}
+.radio-container input:checked + .checkmark {/*aplicar estilo ao checkmark quando o input estiver selecionado/ELE DIZ MAIS OU MENOS ASSIM:aplique o estilo ao elemento checkmark que vem logo após uminput marcado(checked)*/
+	background-color: #ff90a8; /* Cor do fundo quando selecionado */
+	border-color: #4a77a5; /* Cor da borda quando selecionado */
+}
+
+.radio-container:hover{
+	background-color: #f5acbc;
+}
+
+
+.button-container{
+	display: flex;/*torna os botões flexíveis*/
+	justify-content:center;/*centraliza os botões horizontalmente*/
+	gap:20px;/*espaçamento entre os botões*/
+	margin-top: 20px;/*espaçamento do container*/
+    margin-left: 300px;
+    gap: 20px;
+    width: fit-content;
+    
+
+}
+ .btn-default-2{
+    padding: 10px 20px;
+    background-color: #ffa7ba;
+    color: rgb(63, 57, 57);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    
+	
+}
+.btn-default{
+    padding: 10px 20px;
+    background-color: #fff9a7;
+    color: rgb(63, 57, 57);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+   
+
+}
+.comecoImp{
+    font-family: "Inter",sans-serif;
+    color: #fc849e;
+}
+.restoImp{
+    font-family: "Inter",sans-serif;
+    color: #555152;
+}
+.importante {
+    display: flex; /* Garante que os textos fiquem lado a lado */
+    flex-direction: column; /* Organiza os itens em coluna */
+    margin-left: 165px; /* Alinha horizontalmente com os formulários */
+    margin-top: 15px; /* Espaçamento acima */
+    width: 500px; /* Igual ao tamanho do formulário */
+	padding: 20px;
+}
+
+.comecoImp {
+    font-family: "Inter", sans-serif;
+    color: #fc849e;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.restoImp {
+    font-family: "Inter", sans-serif;
+    color: #555152;
+    line-height: 1.5; /* Melhora o espaçamento entre linhas */
+}
+
+footer{
+	clear: both;
+	width: 100%;
+	height: 40px;
+	background-color: #fc849e;
+}
+@media screen and (max-width: 768px) {
+    /* Remove a imagem no mobile */
+	.paragrafo{
+		margin-left: 30px;
+        margin-top: 20px;
+		margin-bottom: 20px;
+	}
+    .espaco {
+        display: none; /* Esconde o conteúdo da classe "espaco" em dispositivos com largura de até 768px */
+    }
+
+    /* Centralizar o "Pré Matrícula" */
+    #pre-matri {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    /* Ajuste no parágrafo */
+    .diagnostico-pergunta {
+        margin-left: 48px;
+        margin-top: 20px;
+    }.radio-container{
+		display: flex;/*alinha o circulo e otexto lado a lado */
+	
+	width: 90%;
+	padding: 10px;/*espaçamento interno da caixa*/
+	margin-top: 20px;/*espaçamento entre as caixas*/
+	margin: auto 20px 10px;
+	
+	background-color: #DAF3F3;
+	border-radius: 10px;
+	cursor:pointer;
+	transition: background-color 0.2s ease;
+	font-family: "Inter",sans-serif;/*vai mudar o estilo da fonte dos textos que estão dentro da caixa*/
+    /* Centralizar caixas de texto azuis e rótulos */
+	}.radio-container .checkmark {/*ESTILO DO CIRCULO=CHECKMARK*/
+		width: 25px;
+		height: 15px;
+		border-radius: 50%;
+		border: 2px solid #4a77a5;
+		background-color: #DAF3F3;
+		transition: background-color 0.1s ease, border-color 0.1s ease;
+		margin-right: 15px;
+	}
+	}.contato-idioma{
+		margin:  0 auto 0 25px; /* Centraliza o container */
+        gap: 10px; /* Espaçamento entre os itens */
+		margin-bottom: 10px;
+		margin-left: 20px;
+ } #digite-aqui {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%; /* Ajusta a largura da caixa */
+        margin: 0 auto; /* Centraliza o container */
+        gap: 10px; /* Espaçamento entre os itens */
+		margin-left: 28px;
+    }
+
+    /* Estilizar os rótulos (Nome, Email, etc.) */
+    #digite-aqui label {
+        width: 100%; /* Garante que os rótulos ocupem toda a largura */
+        text-align: center; /* Centraliza o texto dos rótulos */
+        margin-bottom: 5px; /* Espaçamento inferior entre o rótulo e o campo */
+    }
+
+    /* Ajustar os campos de entrada (inputs) */
+    #digite-aqui input {
+        width: 100%; /* Ajusta os campos para ocupar toda a largura disponível */
+        max-width: 300px; /* Define um limite para a largura dos inputs */
+        padding: 10px; /* Adiciona espaçamento interno */
+        border: 1px solid #ccc; /* Borda discreta */
+        border-radius: 5px; /* Cantos arredondados */
+    }
+	.idioma-pre, .idioma-pre-2{
+		margin-left: 35px;
+        
+	}
+	.idioma-pre{
+		margin-top: 20px;
+	}
+
+	.button-container {
+        display: flex;
+		
+        justify-content: center; /* Centraliza os botões horizontalmente */
+        align-items: center; /* Garante alinhamento vertical se necessário */
+       /* Permite que os botões quebrem linha se necessário */
+        margin: 20px auto; /* Espaçamento ao redor do contêiner */
+	}
+	.btn-default{
+		margin-left: 20px;
+	}
+
+    /* Ajustar o bloco "IMPORTANTE" */
+    .importante {
+        width: 90%; /* Reduz a largura do texto */
+        margin: 10px auto; /* Centraliza horizontalmente */
+        text-align: center; /* Centraliza o texto */
+    }
+
+
+
+

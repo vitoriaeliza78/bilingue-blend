@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content=>
+	<link rel="stylesheet" type="text/css" href="scr/menu5.css">
+	<link rel="stylesheet" type="text/css" href="scr/styleForm6.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<title>Formulário</title>
+</head>
+<body>
+    <header>
+		<nav>
+		
+			<div class="bloco-amarelo">
+				<div class="container-logo">
+					<img src="imagens/imagembilingue.svg" alt="" class="imagembilingue">
+				</div>
+				
+		
+			<div class="container-lan">
+				<i class="fa-solid fa-language" id="icone-language" ></i>
+			</div>
+			
+			</div>
+			
+			<ul class="nav-bar">
+				
+				<label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+				<input type="checkbox" id="check">
+				<span class="menu">
+					<li><a href="indexLanding.html">Home</a></li>
+					<li><a href="indexLanding.html#sobre">Sobre</a></li>
+					<li><a href="indexLanding.html#prof">Professoras</a></li>
+					<li><a href="#pre-matri">Matrícula</a></li>
+					<li><a href="#">Contato</a></li>
+					<li><a href="#">Valores</a></li>
+					<label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+				</span>
+			
+			</ul>
+			
+		</nav>
+
+
+	</header>
+	<main>
+            <div class="foto-espaco">
+			    <img src="imagens/imglado.png" alt="foto do espaço" class="espaco">
+            </div>
+            <div class="pre-matricula">
+		        <p id="pre-matri">Pré Matrícula</p>
+            </div>
+            <div class="autorizacao">
+		        <p class="diagnostico-pergunta">Autorização de uso de imagem da Criança:</p>
+			</div>
+            <div class="formulario">
+                    <form class="form-matricula">
+                        <label class="radio-container"><!--Envolve o texto e o botão de seleção, para que o texto ao lado do botão também seja clicável-->
+                            <input type="radio" name="diagnostico" value="publicar-fotos" required>
+                            <span class="checkmark"></span>
+                            As imagens podem ser utilizadas para fins educativos e de divulgação nas redes sociais e materiais promocionais, sempre respeitando a privacidade e integridade das crianças.
+                        </label>
+
+                        <label class="radio-container"><!---Permite que o usuário clique no texto, além de clicar diretamente no campo-->
+                            <input type="radio" name="diagnostico" value="nao-autorizacao" required>
+                            <span class="checkmark"></span>
+                            Não | Eu não autorizo.
+                            <!--Um elemento visual usado para criar o botão estilizado (o círculo visível).
+                            Este elemento será estilizado no CSS para substituir o design padrão do botão de rádio do navegador.-->
+                        </label>
+
+                        <label class="radio-container">
+                            <input type="radio" name="diagnostico" value="nao-possui" required>
+                            <span class="checkmark"></span>
+                            Autorizo o uso das fotos se a imagem do rosto estiver borrada, sem identificar a criança.
+                        </label>
+            
+                    </form>
+            </div>
+			<div class="button-container">
+                <button type="button" class="btn-default" onclick="window.location.href='indexForm5.html'">Cancelar</button>
+                <button type="button" class="btn-default-2" onclick="window.location.href='indexForm7.html'">Próximo</button>
+			</div>
+            <div class="importante">
+            
+                <p class="comecoImp"> <i class="fa-solid fa-circle-exclamation"></i> IMPORTANTE</p> <p class="restoImp">Para sinalizar interesse preencha este formulário. As turmas serão confirmadas por e-mail assim que atingirmos o número mínimo de alunos. inscrição da criança só é confirmada após o preenchimento do formulário, pagamento e recebimento do nosso e-mail de confirmação.    </p>
+            </div>
+    </main>
+	
+	<footer></footer>
+</body>
+</html>

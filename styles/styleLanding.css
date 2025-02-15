@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Jua&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Jua';
+}
+body{
+    background-color: #FFFDE5;
+}
+
+.bloco-amarelo-landing {
+    width: 100%;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+    background-color: #FAF3A8;
+    
+    font-family: "Fredoka", sans-serif;
+}
+.logo-landing {
+  
+    max-width: 250px;
+    width: auto;
+    height: 9rem;
+    margin-top: 1rem;
+ 
+ 
+  } 
+  .container-logo{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+}
+.bloco-nav-landing {
+    width: 100%;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+    background-color: #FF90A8;
+    margin-top: 1rem;
+    
+    font-family: "Fredoka", sans-serif;
+}
+html{
+    height: 500vh;
+}
+.container{
+    margin: auto;
+    width: 100%;
+}
+.flex{
+    background-color: #FF90A8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 20px 4%;
+   
+}
+header ul{
+    list-style-type: none;
+
+}
+header ul li{
+    display:inline-block;
+    margin: 0 40px;
+} 
+
+header ul li a{
+    color: #FFFDE5;
+    text-decoration: none;
+}
+.banner{
+    background: url("../imagens/banner-bilingue.png") no-repeat center center;
+    background-size: cover;
+    height:92vh;
+}
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color:#ff8ca5; 
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px #d8d6d6;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    font-family: 'Fredoka',sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+
+}
+
+#div-botao{
+    display: flex;
+    padding:2%;
+   
+   max-width: 25%;
+    padding: 2rem;
+    display: flex;
+    float: inline-end;
+    margin-top: 30%;
+    margin-right: 19rem;
+   
+  
+
+
+    
+   
+
+}
+
+.btn-default:hover{
+    background-color: #f86484;
+}
+.tracejado-img{
+    background: url("../imagens/tracejado.png") no-repeat center center;
+    background-size: cover;
+    height:60vh;
+}
+.tracejado-img h1{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #FF90A8;
+    padding: 4rem;
+    font-size: 2rem;
+    
+}
+.tracejado-img p{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #136689;
+    font-size: 1.5rem;
+    
+}
+
+#diferenciais-titulo{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #FF90A8;
+    padding: 4rem;
+    font-size: 2.3rem;
+}
+
+#container-1{
+    display: flex;
+    justify-content: center; /* Centraliza os cards no eixo horizontal */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite quebra de linha se não couberem todos os cards */
+}
+
+    
+
+.cards{
+    background-color: #BEECFD;
+    margin: 10px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px #d8d6d4;
+    transition: 0.5s;
+    
+}
+.cards:hover{
+    background-color:#9be4ff;
+    box-shadow: 0px 8px 16px #c7c7c7;
+}
+.cards img {
+    width: 100%;/*da minha caixa*/
+    height: auto;
+    border-radius: 20px;
+    padding: 1rem;
+   
+}
+.cards h3{
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    color: #136689;
+    font-weight: 500;
+}
+#prof {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: #FF90A8;
+    padding: 4rem;
+    font-size: 2.2rem;
+    margin-top: 2.2rem;
+}
+#ultimo-titulo{
+    margin-bottom: 1.2rem;
+}
+
+.amanda{
+    margin-top: 30px;
+    display: flex;
+    border-radius: 35px;
+    width: 60%;
+    height: 240px;
+    margin-left: 120px ; 
+
+}
+
+.prof-amanda{
+    float: right;
+    font-family: 'Fredoka', serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #136689;
+    margin-right: 150px;
+    
+}
+
+.desc-amanda{
+    float: right;
+    color: #565656;
+    font-family: 'Fredoka', serif;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-right: 40px;
+    padding: 2rem;
+}
+
+.prof-direita{
+    float: right;
+    padding: 25px;
+}
+.img-amanda{
+    margin-left: 20px;
+    display: flex;
+    width: 20%;
+    border-radius: 51%;
+}
+
+.amanda{
+    background-color: #FAC3CF;
+    width: 60%;
+    height: 250px;
+}
+
+.bruna{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #FFF9B5;
+    width: 60%;
+    height: 240px;
+    margin-left: 380px;
+    border-radius: 35px;
+    margin-bottom: 50px;
+    
+}
+
+.prof-bruna{
+    margin-top: 30px;
+    font-family: 'Fredoka', serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #136689;
+    margin-left: 70px;
+}
+
+.desc-bruna{
+    color: #565656;
+    font-family: 'Fredoka', serif;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 70px;
+    padding: 1rem;
+}
+
+.img-bruna{ 
+    margin-top: 35px;
+    float: right;
+    width: 100%;
+    margin-right: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    border-radius: 51%;
+    
+}
+
+.img-2{
+    display: flex;
+}
+
+.bloco-baixo{
+    display: flex;
+    justify-content: center; /* Centraliza os cards no eixo horizontal */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite quebra de linha se não couberem todos os cards */
+}
+
+#container-bloco{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: #DDF5FA;
+    width: 80%;
+    height: 600px;
+  margin-left: 12rem;
+  margin-top: 100px;
+    border-radius: 35px;
+    margin-bottom: 50px;
+}
+#bloco-baixo{
+    
+justify-content: center;
+align-items: column;
+flex-grow: 1;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .h1 {
+    color: #ff5e8e;
+    font-size: 28px;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .contact-info i {
+    color: #ff5e8e;
+    margin-right: 10px;
+  }
+
+  .map {
+    margin-top: 20px;
+    border: 2px ;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .map img {
+    width: 60%;
+    border-radius: 20px;
+  }
+
+footer{
+    width: 100%;
+    height: 20px;
+    background-color: #FF90A8;
+}
